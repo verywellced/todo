@@ -1,19 +1,27 @@
 name: todo
 description: "A new Flutter project."
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # Version
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
+  sdk: ">=3.4.3 <4.0.0"
 
 # Dependencies
 dependencies:
-  bloc: ^8.1.0
   flutter:
     sdk: flutter
+
+  # Bloc State Management
+  bloc: ^8.1.0
   flutter_bloc: ^8.1.1
+  bloc_concurrency: ^0.2.0
+
+  # Equatable
+  equatable: ^2.0.3
+  http: ^1.2.1
+  stream_transform: ^2.0.0
 
 dev_dependencies:
   bloc_test: ^9.1.0
